@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shotcut icon" href="http://vtc.ac.vn/wp-content/uploads/2018/02/icon-1515340988.png" sizes="192x192">
+    <title>Tiki-Minh</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="..\BaiTap_Tiki\Tiki_css.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="header1">
+            <a href="#"><i class="fas fa-parachute-box"></i> Trợ lý tiki</a>
+            <a href="#"><i class="fas fa-shopping-bag"></i> Ưu đãi đối tác</a>
+            <a href="#"><i class="fas fa-hotel"></i> Đặt khách sạn</a>
+            <a href="#"><i class="fas fa-plane"></i> Đặt vé máy bay</a>
+            <a href="#"><i class="fas fa-bolt"></i> Săn hàng tồn</a>
+            <a href="#"><i class="fas fa-fire"></i> Khuyến Mãi HOT</a>
+            <a href="#"><i class="fas fa-globe"></i> Hàng quốc tế</a>
+            <a href="#"><i class="fas fa-comments-dollar"></i> Bán hàng cùng Tiki</a>
+        </div>
+        <div class="header2">
+            <div><img src="E:\New folder\Desktop\FrontEnd-Web\BaiTap_Tiki\Image\VTCA_White_Logo.png" alt="VTCA_White_Logo" width="200px"></div>
+            <div class="find">
+                <input type="text" placeholder="Tìm sản phẩm, danh mục hay thương hiệu bạn mong muốn...">
+                <button>
+                    <i class="fas fa-search"></i>
+                    Tìm kiếm
+                </button>
+            </div>
+            <div class="UserStyle">
+                <a href="#" title="Theo dõi đơn hàng">
+                    <i class="fas fa-truck"></i>
+                    <span>Theo dõi</span><br>
+                    <span>đơn hàng</span>
+                </a>
+
+                <a href="#" title="Thông báo của tôi">
+                    <i class="fas fa-bell"></i>
+                    <span>Thông báo</span><br>
+                    <span>của tôi</span>
+                </a>
+
+                <a href="#" title="Đăng nhập">
+                    <i class="fas fa-user"></i>
+                    <span>Đăng nhập</span><br>
+                    <span>tài khoản</span>
+                </a>
+
+                <a href="#" class="cart" title="Giỏ hàng">
+                    <div>
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <span class="cart-count">0</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="header3">
+            <div>
+                <i class="fas fa-align-justify"></i>
+                <span>DANH MỤC SẢN PHẨM</span>
+            </div>
+            <div>
+                <i class="check-map"></i>
+                <span>Bạn muốn giao hàng tới đâu?</span>
+            </div>
+            <div>
+                <i class="fas fa-angle-down"></i>
+                <span>Sản phẩm bạn đã xem</span>
+            </div>
+            <div style="line-height: 90%">
+                <i class="Tiki-now"></i>
+                <span style="padding: 10px 0 0 80px;">TikiNOW giao nhanh</span><br>
+                <span style="padding: 10px 0 0 80px;">Hàng trăm nghìn sản phẩm</span>
+            </div>
+            <div style="line-height: 90%">
+                <i class="thuongHieu"></i>
+                <span style="padding: 10px 0 0 40px;">Tất cả sản phẩm</span><br>
+                <span style="padding: 10px 0 0 40px;">100% chính hiệu</span>
+            </div>
+            <div>
+                <i class="doiTra"></i>
+                <span style="padding-left: 40px;">30 ngày đổi trả</span>
+            </div>
+
+            
+        </div>
+    </header>
+
+    <div class="header-forMobile">
+        <nav class="navbar navbar-expand-sm bg-primary">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-arrow-left"></i></a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="E:\New folder\Desktop\FrontEnd-Web\BaiTap_Tiki\Image\VTCA_White_Logo.png" width="200"></a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="boder">
+
+        <div class="main-content">
+
+            <div class="Big-img">
+                <a href="#">
+                    <img src="https://salt.tikicdn.com/ts/lp/39/af/2f/ed05ba64e63d71374ca192039dd4e4f3.png" width="100%">
+                </a>
+            </div>
+
+            <div class="content1">
+                <div class="contain">
+                    <div class="wrap">
+                        <img src="https://salt.tikicdn.com/ts/lp/18/11/80/55f0af74e204b1036f8cafbc89a09683.png" width="100%">
+                    </div>
+                </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="openC(event, 'Tab1')" id="defaultOpen1">Laptop, máy đọc sách</button>
+                    <button class="tablinks" onclick="openC(event, 'Tab2')">Bàn học</button>
+                </div>
+                    
+                <div id="Tab1" class="tabcontent">
+                    
+                    <div>
+                        <a href="#">
+                            <div class="card" style="width:100%">
+                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/a5/b1/03/60de1319622d3775ed78fa2199dcb317.jpg" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                        iPad WiFi 32GB New 2018 - Hàng Chính Hãng
+                                    </div>
+                                    <p class="card-text">6.969.000 ₫
+                                        <span class="ori-price">  6.969.000 ₫</span>
+                                    </p>
+                                    
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span style="font-size: 12px;  opacity: 0.7">&nbsp; (1088 nhận xét)</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="sale">-22%</div>
+                            </div>
+                        </a>    
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <div class="card" style="width:100%">
+                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/0e/94/97/5293f93a5a73c25fcf9777d25bb05047.jpg" alt="Card image" style="width:100%">
+                                <div class="card-body">
+                                    <div class="card-title card-title1">
+                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> |
+                                    Apple Macbook Air 2018 Core i5/ 8GB/ 128GB
+                                    </div>
+                                    <p class="card-text">28.000.000 ₫
+                                        <span class="ori-price">  34.990.000 ₫</span>
+                                    </p>
+                                    
+                                    <div class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                        <span style="font-size: 12px;  opacity: 0.7">&nbsp; (38 nhận xét)</span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="sale">-20%</div>
+                            </div>
+                        </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/be/f2/ba/7c5e015111d8a91615f60b4d5194a9b1.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Máy đọc sách Kindle PaperWhite 2018
+                                </div>
+                                <p class="card-text">3.388.000 ₫
+                                    <span class="ori-price"> 4.490.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (41 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-25%</div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/c5/39/6c/89ffe5b999304756f5eff65297ba700d.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                       | Điện Thoại Samsung Galaxy A10 (32GB/2GB)
+                                </div>
+                                <p class="card-text">2.669.000 ₫
+                                    <span class="ori-price"> 3.090.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (75 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-14%</div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/58/5c/98/e3723e6d4341419fc69ef3d837341e71.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Điện Thoại Samsung Galaxy A20 (32GB/3GB)
+                                </div>
+                                <p class="card-text">3.469.000 ₫
+                                    <span class="ori-price">4.190.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (50 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-17%</div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/21/90/52/d393b53d10b22b8aaf1ee327027197ec.JPG" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Điện Thoại Samsung Galaxy A50 (64GB/4GB)
+                                </div>
+                                <p class="card-text">5.768.000 ₫
+                                    <span class="ori-price">6.990.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (40 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-17%</div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/8e/54/5e/dc0fb93839710695f0f752952630ce08.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Điện Thoại Samsung Galaxy A30 (32GB/3GB) 
+                                </div>
+                                <p class="card-text">3.769.000 ₫
+                                    <span class="ori-price">4.990.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (115 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-24%</div>
+                        </div>
+                    </a>    
+                    </div>
+                    
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/21/90/52/d393b53d10b22b8aaf1ee327027197ec.JPG" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Điện Thoại Samsung Galaxy A50 (64GB/4GB)
+                                </div>
+                                <p class="card-text">5.768.000 ₫
+                                    <span class="ori-price">6.990.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (40 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-17%</div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/c7/6f/1d/ec9adca38fd502272acd1719e70f5c26.jpg" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Điện Thoại Samsung Galaxy A70 (128GB/6GB)
+                                </div>
+                                <p class="card-text">7.480.000 ₫
+                                    <span class="ori-price">9.990.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (28 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-25%</div>
+                        </div>
+                    </a>    
+                    </div>
+
+                    <div>
+                    <a href="#">
+                        <div class="card" style="width:100%">
+                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/b5/e4/10/90375518604b6972d727430c3bef8a24.jpg" style="width:100%">
+                            <div class="card-body">
+                                <div class="card-title card-title1">
+                                        <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                        | Điện Thoại iPhone 6s Plus 32GB VN/A
+                                </div>
+                                <p class="card-text">7.480.000 ₫
+                                    <span class="ori-price">9.990.000 ₫</span>
+                                </p>
+                                
+                                <div class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                    <span style="font-size: 12px; opacity: 0.7;">&nbsp; (28 nhận xét)</span>
+                                </div>
+                                
+                            </div>
+                            <div class="sale">-25%</div>
+                        </div>
+                    </a>    
+                    </div>
+                
+                </div>
+                    
+                <div id="Tab2" class="tabcontent">
+                    <div class="ctn1">
+                        1
+                    </div>
+                    <div class="ctn2">
+                        2
+                    </div>
+                    <div class="ctn3">
+                        3
+                    </div>
+                    <div class="ctn4">
+                        4
+                    </div>
+                    <div class="ctn5">
+                        5
+                    </div>
+                    <div class="ctn6">
+                        6
+                    </div>
+                    <div class="ctn7">
+                        7
+                    </div>
+                    <div class="ctn8">
+                        8
+                    </div>
+                    <div class="ctn9">
+                        9
+                    </div>
+                    <div class="ctn10">
+                        10
+                    </div>
+                </div>
+
+                <div class="button-ctn1">
+                    <button type="button" style="width:200px" class="btn btn-danger">XEM TẤT CẢ</button>
+                </div>
+                
+                <script>
+                    function openC(evt, tabName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(tabName).style.display = "grid";
+                        evt.currentTarget.className += " active";
+                    }
+                    document.getElementById("defaultOpen1").click();
+                </script>
+            </div>
+
+            <div class="content2">
+                <div class="contain">
+                    <div class="wrap">
+                        <img src="https://salt.tikicdn.com/ts/lp/5e/c4/a2/6b0b58ca86ede1dd10ef7486431f1aee.png" width="100%">
+                    </div>
+                </div>
+                <div class="wrap2">
+                    <div class="contain2">
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/a2/50/e2/ed7f914563fe5dac7fc33c56b13f3197.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/81/64/a0/9acd256fc10ba701afc52ab4351b874e.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/92/17/e8/7b43af95d3558475f931570a5d80170c.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/11/a7/87/1f9458bc23ea4a309d746b3fa1fdc366.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/fb/46/21/7276e6f67426471172b7c8e03a3d9561.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/ec/20/86/01d41c6ad344afee079ef0c1a4b3d8d4.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/8e/45/45/2c89f03f95aea1bc5eb61ffc6e51d2c3.png" width="100%"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="https://salt.tikicdn.com/ts/lp/1e/d4/74/80c6e3176356b971da3cfc6ccebee2cf.png" width="100%"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content3">
+                <div class="contain contain-PC">
+                    <div class="wrap">
+                        <img src="https://salt.tikicdn.com/ts/lp/a0/d4/78/b1050b342ab7c827c335a69a6c8c41d9.png" width="100%">
+                    </div>
+                </div>
+
+                <div class="wrap3">
+                    <div class="contain3">
+
+                        <div>
+                            <div class="first-div fd-1">
+                                    <a href="#">
+                                        <img src="https://salt.tikicdn.com/ts/lp/41/84/d6/28776c9bf80f9af563386ec3bcd3b446.png" width="100%">
+                                    </a>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/82/a1/a8/b9694ef4f35fa0985a3470d5c7320e21.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                | Điện Thoại Xiaomi Redmi 7A
+                                            </div>
+                                            <p class="card-text">1.990.00₫
+                                                <span class="ori-price">2.390.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (15 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-17%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                            <a href="#">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/3a/17/8f/0c6e82dac10c509731d5b31a8975bc87.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                            Điện Thoại Xiaomi Redmi 7A
+                                        </div>
+                                        <p class="card-text">2.390.000₫ &nbsp;&nbsp;
+                                            <span class="ori-price"></span>
+                                        </p>
+                                        
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                            <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                            <span style="font-size: 12px;  opacity: 0.7">&nbsp; (88 nhận xét)</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </a>    
+                            </div>
+
+                            <div>
+                            <a href="#">
+                                <div class="card" style="width:100%">
+                                    <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/4a/f5/9c/f8fd3ab7f73d6fd744c47e8c25809f67.jpg" alt="Card image" style="width:100%">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                            Điện Thoại Xiaomi Redmi Note
+                                        </div>
+                                        <p class="card-text">3.790.00₫
+                                            <span class="ori-price">3.990.000₫</span>
+                                        </p>
+                                        
+                                        <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                            <span style="font-size: 12px;  opacity: 0.7">&nbsp; (18 nhận xét)</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="sale">-5%</div>
+                                </div>
+                            </a>    
+                            </div>
+
+                            <div class="end-div">
+                                <div class="button-ctn1">
+                                    <button type="button" style="width:200px" class="btn btn-danger">XEM THÊM</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <div class="first-div fd-2">
+                                <a href="#">
+                                    <img src="https://salt.tikicdn.com/ts/lp/78/01/99/da24e851c1c8c2457bb8ea473565ed46.png" width="100%">
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/media/catalog/product/1/_/1.u5488.d20170907.t174819.876769.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Pin Sạc Dự Phòng Energizer
+                                            </div>
+                                            <p class="card-text">769.000₫
+                                                <span class="ori-price"> 900.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (18 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-15%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/76/bc/ce/1014770d3ecae9ceb6af0e5d9dc7d415.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Pin Sạc Dự Phòng Tích Hợp sạc ...
+                                            </div>
+                                            <p class="card-text">990.000 ₫
+                                                <span class="ori-price">1.200.000 ₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (80 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-18%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/8f/7d/5c/51ff70d672409699597d24f3ff803436.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Pin Sạc Dự Phòng Energizer 
+                                            </div>
+                                            <p class="card-text">969.000 ₫
+                                                <span class="ori-price">1.100.000 ₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (10 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-12%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div class="end-div">
+                                <div class="button-ctn1">
+                                    <button type="button" style="width:200px;" class="btn btn-danger">XEM THÊM</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="first-div fd-3">
+                                <a href="#">
+                                    <img src="https://salt.tikicdn.com/ts/lp/aa/e9/7d/449febeeb4597df125b4551893ae5595.png" width="100%">
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/0c/3a/4b/26c8dababda0b6792594fcd9e5bfbe76.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Đèn Bàn Sạc Panasonic
+                                            </div>
+                                            <p class="card-text">1.649.00₫
+                                                <span class="ori-price">2.340.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (8 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-30%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/8f/2b/4e/e97879c9a4d128052ea8f90577918873.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Đèn Bàn Sạc Panasonic NNP619
+                                            </div>
+                                            <p class="card-text">999.000₫
+                                                <span class="ori-price">1.410.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (23 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-29%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/99/1d/04/d6915eaf760371c13f06166262dbb497.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Đèn Bàn Sạc Panasonic NNP6094
+                                            </div>
+                                            <p class="card-text">909.800₫
+                                                <span class="ori-price">1.140.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (17 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-20%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div class="end-div">
+                                <div class="button-ctn1">
+                                    <button type="button" style="width:200px" class="btn btn-danger">XEM THÊM</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="first-div fd-4">
+                                <a href="#">
+                                    <img src="https://salt.tikicdn.com/ts/lp/9c/3d/87/fac128fb1c3c77f15ee97ba7f7fc4e3c.png" width="100%">
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/59/8d/7c/bcf8f183a433c44b63feac214efa4f9e.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Sandal Thể thao nam
+                                            </div>
+                                            <p class="card-text">325.000₫
+                                                <span class="ori-price">450.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (89 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-28%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/fb/db/6f/17a25f60c3a5a0395f486dd6d97430cf.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Sandal thể thao nam
+                                            </div>
+                                            <p class="card-text">325.000₫
+                                                <span class="ori-price">400.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (19 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-15%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/57/fd/f8/bd291c94d1270e59487399200dbf44b6.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                Pin Sạc Dự Phòng Energizer
+                                            </div>
+                                            <p class="card-text">769.000₫
+                                                <span class="ori-price"> 900.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px;  opacity: 0.7">&nbsp; (18 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-15%</div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div class="end-div">
+                                <div class="button-ctn1">
+                                    <button type="button" style="width:200px" class="btn btn-danger">XEM THÊM</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="content4">
+                <div class="contain contain-PC">
+                    <div class="wrap">
+                        <img src="https://salt.tikicdn.com/ts/lp/58/a8/f5/7e2c68ba610bdeff7d2a81a1de55c80b.png" width="100%">
+                    </div>
+                </div>
+                <div class="wrap4">
+                    <div class="contain4">
+                        <div class="imageTitle1">
+                            <a href="#"></a>
+                        </div>
+                        <div>
+                            <div class="tab">
+                                <button class="tablinks4" onclick="openC4(event, 'Tab4.1')" id="defaultOpen4">Sách tiếng việt</button>
+                                <button class="tablinks4" onclick="openC4(event, 'Tab4.2')">Sách tiếng anh</button>
+                            </div>
+
+                            <div id="Tab4.1" class="tabcontent4">
+                
+                                <div>
+                                    <a href="#">
+                                        <div class="card" style="width:100%">
+                                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/64/8b/72/b7bca8ef2453eb27ea92db3b6de5d7ae.jpg" alt="Card image" style="width:100%">
+                                            <div class="card-body">
+                                                <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                    No. More. Plastic
+                                                </div>
+                                                <p class="card-text">59.250₫
+                                                    <span class="ori-price">75.000₫</span>
+                                                </p>
+                                                
+                                                <div class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span style="font-size: 12px;  opacity: 0.7">&nbsp; (15 nhận xét)</span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="sale">-21%</div>
+                                        </div>
+                                    </a>    
+                                </div>
+            
+                                <div>
+                                    <a href="#">
+                                        <div class="card" style="width:100%">
+                                            <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/c4/10/af/f92ea8b93450770c7c666db888142e6f.jpg" alt="Card image" style="width:100%">
+                                            <div class="card-body">
+                                                <div class="card-title card-title1">
+                                                <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                | Nghệ Thuật Giải Quyết Các Vấn Đề Trong Giao Tiếp
+                                                </div>
+                                                <p class="card-text">88.060₫
+                                                    <span class="ori-price">119.000₫</span>
+                                                </p>
+                                                
+                                                <div class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                    <span style="font-size: 12px;  opacity: 0.7">&nbsp; (38 nhận xét)</span>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="sale">-26%</div>
+                                        </div>
+                                    </a>    
+                                </div>
+            
+                                <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/f6/1d/e3/f5547f099196558dce15304197d3b40c.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                    | Sự Cứu Rỗi Của Thánh Nữ
+                                            </div>
+                                            <p class="card-text">95.499₫
+                                                <span class="ori-price">128.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px; opacity: 0.7;">&nbsp; (20 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-25%</div>
+                                    </div>
+                                </a>    
+                                </div>
+            
+                                <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/eb/62/6b/0e56b45bddc01b57277484865818ab9b.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                    | Đừng Lựa Chọn An Nhàn Khi Còn Trẻ
+                                            </div>
+                                            <p class="card-text">58.320₫
+                                                <span class="ori-price">81.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px; opacity: 0.7;">&nbsp; (31 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-28%</div>
+                                    </div>
+                                </a>    
+                                </div>
+            
+                                <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/cc/c7/c3/e5d01e3d82b27e27bb5911aff21f63dc.JPG" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                    | Thánh Kinh Dưỡng Da
+                                            </div>
+                                            <p class="card-text">78.750₫
+                                                <span class="ori-price">105.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px; opacity: 0.7;">&nbsp; (65 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-25%</div>
+                                    </div>
+                                </a>    
+                                </div>
+            
+                                <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/15/f1/66/14bf1d58dd8c3c0cf4d51c6939acc0b1.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                    | Không Tự Khinh Bỉ Không Tự Phí Hoài
+                                            </div>
+                                            <p class="card-text">53.175₫
+                                                <span class="ori-price">76.000₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-size: 12px; opacity: 0.7;">&nbsp; (1258 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-30%</div>
+                                    </div>
+                                </a>    
+                                </div>
+            
+                                <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/0d/c1/d2/c6c0ec9fdb8314b993959d81760ea182.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                    | Siêu Cường
+                                            </div>
+                                            <p class="card-text">103.600₫
+                                                <span class="ori-price">36.400₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span style="font-size: 12px; opacity: 0.7;">&nbsp; (11 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-26%</div>
+                                    </div>
+                                </a>    
+                                </div>
+                                
+                                <div>
+                                <a href="#">
+                                    <div class="card" style="width:100%">
+                                        <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/25/d6/2c/f88080bba78a779fb78e1b76b73a9813.jpg" alt="Card image" style="width:100%">
+                                        <div class="card-body">
+                                            <div class="card-title card-title1">
+                                                    <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                    | Sống Thực Tế Giữa Đời Thực Dụng
+                                            </div>
+                                            <p class="card-text">68.600₫
+                                                <span class="ori-price">29.400₫</span>
+                                            </p>
+                                            
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                <span style="font-size: 12px; opacity: 0.7;">&nbsp; (40 nhận xét)</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="sale">-30%</div>
+                                    </div>
+                                </a>    
+                                </div>
+
+                            </div>
+ 
+                            <div id="Tab4.2" class="tabcontent4">
+                                    <div>
+                                            <a href="#">
+                                                <div class="card" style="width:100%">
+                                                    <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/a5/b1/03/60de1319622d3775ed78fa2199dcb317.jpg" alt="Card image" style="width:100%">
+                                                    <div class="card-body">
+                                                        <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span> | 
+                                                            iPad WiFi 32GB New 2018 - Hàng Chính Hãng
+                                                        </div>
+                                                        <p class="card-text">6.969.000 ₫
+                                                            <span class="ori-price">  6.969.000 ₫</span>
+                                                        </p>
+                                                        
+                                                        <div class="star">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <span style="font-size: 12px;  opacity: 0.7">&nbsp; (1088 nhận xét)</span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="sale">-22%</div>
+                                                </div>
+                                            </a>    
+                                        </div>
+                    
+                                        <div>
+                                            <a href="#">
+                                                <div class="card" style="width:100%">
+                                                    <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/0e/94/97/5293f93a5a73c25fcf9777d25bb05047.jpg" alt="Card image" style="width:100%">
+                                                    <div class="card-body">
+                                                        <div class="card-title card-title1">
+                                                        Apple Macbook Air 2018 Core i5/ 8GB/ 128GB
+                                                        </div>
+                                                        <p class="card-text">28.000.000 ₫
+                                                            <span class="ori-price">  34.990.000 ₫</span>
+                                                        </p>
+                                                        
+                                                        <div class="star">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                            <span style="font-size: 12px;  opacity: 0.7">&nbsp; (38 nhận xét)</span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="sale">-20%</div>
+                                                </div>
+                                            </a>    
+                                        </div>
+                    
+                                        <div>
+                                        <a href="#">
+                                            <div class="card" style="width:100%">
+                                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/be/f2/ba/7c5e015111d8a91615f60b4d5194a9b1.jpg" alt="Card image" style="width:100%">
+                                                <div class="card-body">
+                                                    <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                            | Máy đọc sách Kindle PaperWhite 2018
+                                                    </div>
+                                                    <p class="card-text">3.388.000 ₫
+                                                        <span class="ori-price"> 4.490.000 ₫</span>
+                                                    </p>
+                                                    
+                                                    <div class="star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                        <span style="font-size: 12px; opacity: 0.7;">&nbsp; (41 nhận xét)</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="sale">-25%</div>
+                                            </div>
+                                        </a>    
+                                        </div>
+                    
+                                        <div>
+                                        <a href="#">
+                                            <div class="card" style="width:100%">
+                                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/c5/39/6c/89ffe5b999304756f5eff65297ba700d.jpg" alt="Card image" style="width:100%">
+                                                <div class="card-body">
+                                                    <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                            | Điện Thoại Samsung Galaxy A10 (32GB/2GB)
+                                                    </div>
+                                                    <p class="card-text">2.669.000 ₫
+                                                        <span class="ori-price"> 3.090.000 ₫</span>
+                                                    </p>
+                                                    
+                                                    <div class="star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                        <span style="font-size: 12px; opacity: 0.7;">&nbsp; (75 nhận xét)</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="sale">-14%</div>
+                                            </div>
+                                        </a>    
+                                        </div>
+                    
+                                        <div>
+                                        <a href="#">
+                                            <div class="card" style="width:100%">
+                                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/58/5c/98/e3723e6d4341419fc69ef3d837341e71.jpg" alt="Card image" style="width:100%">
+                                                <div class="card-body">
+                                                    <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                            | Điện Thoại Samsung Galaxy A20 (32GB/3GB)
+                                                    </div>
+                                                    <p class="card-text">3.469.000 ₫
+                                                        <span class="ori-price">4.190.000 ₫</span>
+                                                    </p>
+                                                    
+                                                    <div class="star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                        <span style="font-size: 12px; opacity: 0.7;">&nbsp; (50 nhận xét)</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="sale">-17%</div>
+                                            </div>
+                                        </a>    
+                                        </div>
+                    
+                                        <div>
+                                        <a href="#">
+                                            <div class="card" style="width:100%">
+                                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/21/90/52/d393b53d10b22b8aaf1ee327027197ec.JPG" alt="Card image" style="width:100%">
+                                                <div class="card-body">
+                                                    <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                            | Điện Thoại Samsung Galaxy A50 (64GB/4GB)
+                                                    </div>
+                                                    <p class="card-text">5.768.000 ₫
+                                                        <span class="ori-price">6.990.000 ₫</span>
+                                                    </p>
+                                                    
+                                                    <div class="star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                        <span style="font-size: 12px; opacity: 0.7;">&nbsp; (40 nhận xét)</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="sale">-17%</div>
+                                            </div>
+                                        </a>    
+                                        </div>
+                    
+                                        <div>
+                                        <a href="#">
+                                            <div class="card" style="width:100%">
+                                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/8e/54/5e/dc0fb93839710695f0f752952630ce08.jpg" alt="Card image" style="width:100%">
+                                                <div class="card-body">
+                                                    <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                            | Điện Thoại Samsung Galaxy A30 (32GB/3GB) 
+                                                    </div>
+                                                    <p class="card-text">3.769.000 ₫
+                                                        <span class="ori-price">4.990.000 ₫</span>
+                                                    </p>
+                                                    
+                                                    <div class="star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span style="font-size: 12px; opacity: 0.7;">&nbsp; (115 nhận xét)</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="sale">-24%</div>
+                                            </div>
+                                        </a>    
+                                        </div>
+                                        
+                                        <div>
+                                        <a href="#">
+                                            <div class="card" style="width:100%">
+                                                <img class="card-img-top" src="https://salt.tikicdn.com/cache/w1200/ts/product/21/90/52/d393b53d10b22b8aaf1ee327027197ec.JPG" alt="Card image" style="width:100%">
+                                                <div class="card-body">
+                                                    <div class="card-title card-title1">
+                                                            <span><img src="https://www.msb.com.vn:8080/razuna/assets/1/EA65B322B235464E98A7D4A148BE9E0C/img/C201575E62614BFDB67919FD3D99C8A2/deal_1.jpg" width="30%"></span>
+                                                            | Điện Thoại Samsung Galaxy A50 (64GB/4GB)
+                                                    </div>
+                                                    <p class="card-text">5.768.000 ₫
+                                                        <span class="ori-price">6.990.000 ₫</span>
+                                                    </p>
+                                                    
+                                                    <div class="star">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star" style="color: #b8b8b8"></i>
+                                                        <span style="font-size: 12px; opacity: 0.7;">&nbsp; (40 nhận xét)</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="sale">-17%</div>
+                                            </div>
+                                        </a>    
+                                        </div>
+                            </div>
+
+                            <div class="end-div end-div4">
+                                <div class="button-ctn1">
+                                    <button type="button" style="width:200px" class="btn btn-danger">XEM THÊM</button>
+                                </div>
+                            </div>
+                            
+                            <script>
+                                function openC4(evt, tabName) {
+                                    var i, tabcontent, tablinks;
+                                    tabcontent = document.getElementsByClassName("tabcontent4");
+                                    for (i = 0; i < tabcontent.length; i++) {
+                                    tabcontent[i].style.display = "none";
+                                    }
+                                    tablinks = document.getElementsByClassName("tablinks4");
+                                    for (i = 0; i < tablinks.length; i++) {
+                                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                    }
+                                    document.getElementById(tabName).style.display = "grid";
+                                    evt.currentTarget.className += " active";
+                                }
+                                document.getElementById("defaultOpen4").click();
+                            </script>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <div class="ft-container">
+            <div class="early-ft">
+                <div class="new-letter-title">
+                    <i class="icon-newsletter"></i>
+                    <div>
+                        <h4 style="margin-left: 150px; margin-top: 30px;">Đăng ký nhận bản tin Tiki</h4>
+                        <h6 style="margin-left: 150px;">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</h6>
+                    </div>
+                </div>
+
+                <div class="Group-inputEmail">
+                    <div style="width:400px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Địa chỉ email của bạn">
+                            <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Đăng ký</button>  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-ft">
+                <div class="main-ft-container">
+                    <div class="main-ft-content">
+                        <p>HỖ TRỢ KHÁCH HÀNG</p>
+                        <p>
+                            <span class="redColor-text">Hotline đặt hàng: 1800-6969</span><br>
+                            (Miễn phí 8-21h, kể cả T7, CN)
+                        </p>
+                        <p>
+                            <span class="redColor-text">Hotline chăm sóc khách hàng: 1900-1009</span><br>
+                            (1000đ/phút, kể cả T7, CN)
+                        </p>
+                        <p style="line-height: 200%">Các câu hỏi thường gặp<br>
+                        Gửi yêu cầu hỗ Trợ<br>
+                        Hướng dẫn đặt hàng<br>
+                        Phương thức vận chuyển<br>
+                        Chính sách đổi trả<br>
+                        Hướng dẫn mua trả góp<br>
+                        Chính sách hàng nhập khẩu.
+                        </p>
+                    </div>
+
+                    <div class="main-ft-content">
+                        <p>VỀ TIKI</p>
+                        <p style="line-height: 200%">
+                            Giới thiệu tiki<br>
+                            Tuyển dụng<br>
+                            Chính sách bảo mật thanh toán<br>
+                            Chính sách bảo mật thông tin cá nhân<br>
+                            Chính sách giải quyết khiếu nại<br>
+                            Điều khoản sử dụng<br>
+                            Hội sách online<br>
+                            Giới thiệu tiki xu<br>
+                            Tiki tư vấn<br>
+                            Bán hàng doanh nghiệp.
+                        </p>
+                    </div>
+
+                    <div class="main-ft-content">
+                        <p>HỢP TÁC VÀ LIÊN KẾT</p>
+                        <p style="line-height: 200%">
+                            Quy chế giao dịch sàn GDTMDT<br>
+                            Bán hàng cùng tiki
+                        </p>
+                    </div>
+
+                    <div class="main-ft-content">
+                        <p>PHƯƠNG THỨC THANH TOÁN</p>
+                    </div>
+
+                    <div class="main-ft-content">
+                        <p>KẾT NỐI VỚI CHÚNG TÔI</p><br>
+                        <a href="#"><i class="logo logo-facebook"></i></a>
+                        <a href="#"><i class="logo logo-youtube"></i></a>
+                        <a href="#"><i class="logo logo-zalo"></i></a>
+                        <br><br><br><br>
+                        <p>TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</p><br>
+                        <a href="#"><i class="logo-AppStore"></i></a><br><br><br>
+                        <a href="#"><i class="logo-GooglePlay"></i></a>
+                    </div>
+
+                    <div class="main-ft-content">
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="address-ft">
+                <div class="left-address">
+                    <i class="check-map-ft"></i>
+                    <div style="margin-left: 70px;">
+                        <span >địa chỉ văn phòng: <b>18 Tam trinh, Minh Khai, Hai Bà Trưng, Hà Nội</b></span>
+                        <p style="font-size: 11px;">
+                                Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng
+                        </p>
+                    </div>
+                </div>
+                <div class="right-address">
+                    <span>Địa chỉ gửi hàng đổi/trả/bảo hành:<b> Trung tâm xử lý đơn hàng TIKI - Hẻm số 717, đường Tân Sơn, Phường 12, Quận Gò Vấp, TP. Hồ Chí Minh</b></span>
+                    <p style="font-size: 11px;">(Tham khảo hướng dẫn đổi, trả, bảo hành hoặc liên hệ 1900-6035 để được hướng dẫn thêm)</p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+</body>
+</html>

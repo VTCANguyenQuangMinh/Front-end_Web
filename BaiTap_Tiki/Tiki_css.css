@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+/* header */
+
+header {
+    display: none;
+}
+
+div.header-forMobile ul li a i{
+    color: white;
+    font-size: 20px;
+}
+/* content */
+div.main-content {
+    display: flex;
+    flex-direction: column;
+}
+/* content 1 */
+.wrap {
+    max-width: 100%;
+    margin: auto;
+}
+
+.tab {
+    overflow: hidden;
+}
+.tab button {
+float: left;
+border: thin solid gray;
+outline: none;
+cursor: pointer;
+padding: 6px 10px;
+transition: 0.3s;
+font-size: 17px;
+border-radius: 5px;
+margin: 5px;
+background-color: white;
+}
+
+.tab button.active {
+background-color: #189eff;
+border: none;
+color: white;
+}
+
+.tabcontent {
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    grid-row-gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tabcontent div{
+    border: none;
+    padding: 0;
+}
+div.card {
+    border: none;
+    position: relative;
+}
+
+div.card > div.sale {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0;
+    left: 0px;
+    background-image: url("https://longfordpc.com/images/price-clipart-award-2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    color: white;
+}
+
+div .card-title{
+    height: 80px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div .card-title1{
+    height: 70px;
+}
+
+span.ori-price {
+    text-decoration: line-through;
+    opacity: 0.7;
+    font-size: 12px;
+    padding-left: 10px;
+}
+div.star i{
+    color: yellow;
+    letter-spacing: -2px;
+    font-size: 10px;
+}
+
+div.button-ctn1 {
+    width: 200px;
+    margin: 40px auto 0;
+}
+
+div.button-ctn1:hover {
+    opacity: 0.7;
+}
+
+/* content 2 */
+
+div.contain2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px;
+}
+
+/* content 3 */
+
+div.contain-PC {
+    display: none;
+}
+
+.contain3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+}
+
+.contain3 > div {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.first-div, .end-div {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* Content 4 */
+
+.content4 {
+    margin-top: 40px;
+}
+.imageTitle1 {
+    height: 107px;
+    background-image: url("https://salt.tikicdn.com/ts/lp/f9/e3/cd/57afe51526ac99212ab402c2fdfde902.png");
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.tabcontent4 {
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+    grid-row-gap: 20px;
+}
+
+.contain4 {
+    display: grid;
+}
+
+.end-div4 {
+    margin-bottom: 40px;
+}
+
+/* footer */
+.ft-container {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 400px) {
+
+    /* Header */
+    div.header-forMobile {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > div.header1 {
+        display: flex;
+        background-color: #1d71ab;
+        justify-content: flex-end;
+        padding-right: 70px;
+    }
+    div.header1 > a {
+        color: white;
+        text-decoration: none;
+        margin: 3px;
+        margin-left: 20px;
+    }
+    div.header1 > a i {
+        color: #fdd835;
+    }
+    
+    header > div.header2 {
+        display: flex;
+        height: 60px;
+        background-color: #189eff;
+        justify-content: center;
+        padding-top: 17px;
+    }
+    header > div.header2 div {
+        margin: 0 10px;
+    }
+    div.find{
+        display: flex;
+    }
+    div.find > input[type=text] {
+        height: 35px;
+        width: 375px;
+        padding: 0 10px;
+        border: none;
+        border-radius: 4px 0px 0px 4px;
+        font-size: 12px;
+    }
+    div.find > button {
+        height: 35px;
+        width: 100px;
+        padding: 0 10px;
+        outline: none;
+        color: rgb(74, 74, 74);
+        border-radius: 0px 4px 4px 0px;
+        border: none;
+        background-color: #edeef2;
+    }
+    
+    div.UserStyle {
+        float: right;
+        
+    }
+    
+    div.UserStyle a {
+        text-decoration: none;
+        color: white;
+        vertical-align: top;
+        font-weight: 400px;
+        display: inline-block;
+        position: relative;
+        margin: 0 10px;
+    }
+    div.UserStyle a i {
+        font-size: 25px;
+        position: absolute;
+        float: left;
+        left: 0;
+        top: 10px;
+    }
+    div.UserStyle a span{
+        padding-left: 35px;
+    }
+    div.UserStyle a.cart {
+        border: medium solid white;
+        border-radius: 5px;
+        padding: 7px 0;
+    }
+    div.UserStyle a.cart span.cart-count {
+        background-color: #fdd835;
+        padding: 3px;
+        color: black;
+        border-radius: 5px;
+        margin-left: 3px;
+    }
+    div.UserStyle a.cart i {
+        font-size: 20px;
+        left: 8px;
+    }
+    div.UserStyle a.cart span{
+        padding-left: 30px;
+    }
+    
+    div.header3 {
+        height: 50px;
+        background-color: #189eff;
+        color: white;
+        display: flex;
+        padding: 12px 0px 0px 55px;
+    }
+
+    .header3 > div {
+        margin-right: 25px;
+    }
+
+    i.check-map {
+        padding: 15px 10px;
+        background-image: url("https://pngimage.net/wp-content/uploads/2018/05/check-in-map-icon-png-5.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    i.Tiki-now {
+        padding: 20px 35px;
+        background-image: url("https://salt.tikicdn.com/ts/banner/33/ba/89/54c02d2475983f93a024c0cd13f238e4.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    i.thuongHieu{
+        padding: 15px 15px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAvFP3mVlI2iwcmeyZ78xhs_72ry0s29Ucrr8jO4GWzWXmi_HC7g");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 25px;
+    }
+
+    i.doiTra{
+        padding: 15px 15px;
+        background-image: url("https://salt.tikicdn.com/assets/cms/doi-tra-de-dang/img/step-1.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 25px;
+    }
+    div.header3 div {
+        font-weight: 400;
+        font-size: 16px;
+        position: relative;
+    }
+    
+    div.header3 div i{
+        position: absolute;
+        font-size: 25px;
+    }
+    div.header3 div span{
+        padding-left: 30px;
+    }
+
+    /* End header */
+    /* Content 1 */
+    .wrap {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .tab {
+        margin-left: 10%;
+    }
+
+    .tabcontent {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    div.Big-img {
+        margin-top: 10px;
+    }
+    /* Content 2 */
+    div.contain2 {
+        max-width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-row-gap: 20px;
+    }
+
+    /* content 3 */
+    div.contain-PC {
+        display: block;
+    }
+
+    .contain3 {
+        max-width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 5%;
+    }
+
+    div.card-title {
+        height: 60px;
+        font-weight: normal;
+    }
+    p.card-text {
+        font-weight: bold;
+    }
+
+    .fd-1, .fd-3 {
+        background-color: #fb8804;
+    }
+
+    .fd-2, .fd-4 {
+        background-color: #009aff;
+    }
+
+    .first-div {
+        height: 200px;
+    }
+    .contain3 > div {
+        grid-gap: 10px;
+    }
+
+    /* Content 4 */
+
+    .content4 {
+        margin: 100px 30px 0 0;
+    }
+
+    .contain4 {
+        max-width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .imageTitle1 {
+        background-image: url("https://salt.tikicdn.com/ts/lp/84/07/58/2eb57959e74fb317a3610c7176ebad3c.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 800px;
+    }
+
+    .tabcontent4 {
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 10px;
+        grid-gap: 20px;
+    }
+
+    
+    .end-div4 {
+        margin-bottom: 0px;
+    }
+
+
+    /* footer */
+    .ft-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .early-ft {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        height: 100px;
+        background-color: #f7f7f7;
+    }
+
+    .new-letter-title {
+        position: relative;
+        float: left;
+        margin-left: 70px;
+    }
+
+    .icon-newsletter {
+        position: absolute;
+        padding: 50px;
+        background-image: url("https://image.flaticon.com/icons/svg/321/321817.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -20px;
+    }
+
+    .icon-newsletter div {
+        margin-left: 500px;
+    }
+
+    .Group-inputEmail {
+        margin: 50px 0 0 50px;
+    }
+
+    .main-ft-container {
+        max-width: 90%;
+        margin: auto;
+        font-weight: 650;
+        display: flex;
+    }
+
+    .main-ft-content {
+        margin: 40px 20px;
+    }
+
+    .main-ft-content p {
+        font-size: 12px;
+    }
+
+    span.redColor-text {
+        color: red;
+        font-size: 12px;
+    }
+
+    i.logo {
+        margin: 10px;
+        padding: 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .logo-facebook {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPHRriXgYOk2ERnTBjlMV3ycy8I-w7TgAe9UcOdLJGV7V8qQo");  
+    }
+
+    .logo-youtube {
+        background-image: url("https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png")
+    }
+
+    .logo-zalo {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Logo_Zalo.png")
+    }
+
+    i.logo-AppStore {
+        padding: 20px 80px;
+        background-image: url("https://banner2.kisspng.com/20180719/evg/kisspng-app-store-apple-download-logo-app-store-5b500d988880b2.3327280815319730165591.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    i.logo-GooglePlay {
+        padding: 20px 80px;
+        background-image: url("https://my.smash.id/images/playstore.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .address-ft {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-address {
+        position: relative;
+        margin-left: 100px;
+    }
+
+    .right-address {
+        position: relative;
+        margin-left: 150px;
+        margin-right: 100px;
+    }
+
+    .check-map-ft {
+        position: absolute;
+        padding: 35px 35px;
+        background-image: url("https://cdn3.iconfinder.com/data/icons/map/500/right-512.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+
